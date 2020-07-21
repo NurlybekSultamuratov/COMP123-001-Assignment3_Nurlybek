@@ -19,5 +19,51 @@ namespace COMP123_001_Assignment3_Nurlybek
         {
             get => _diameter;
         }
+
+        public double Mass
+        {
+            get => _mass;
+        }
+
+        public int MoonCount
+        {
+            get => _moonCount;
+            set
+            {
+                _moonCount = value;
+            }
+        }
+
+        public string Name
+        {
+            get => _name;
+        }
+
+        public double OrbitalPeriod
+        {
+            get => _orbitalPeriod;
+            set
+            {
+                _orbitalPeriod = value;
+            }
+        }
+
+        public int RingCount
+        {
+            get => _ringCount;
+            set
+            {
+                _ringCount = value;
+            }
+        }
+
+        public double RotationPeriod
+        {
+            get => _rotationPeriod;
+            set
+            {
+                _rotationPeriod = value;
+            }
+        }
     }
 }
