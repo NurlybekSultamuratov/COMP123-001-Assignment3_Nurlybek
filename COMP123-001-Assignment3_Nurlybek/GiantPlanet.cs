@@ -7,7 +7,7 @@ namespace COMP123_001_Assignment3_Nurlybek
 {
     public class GiantPlanet : Planet , IHasMoons, IHasRings
     {
-        private string _type="Gas";
+        private string _type;
 
         public GiantPlanet (string name, double diameter, double mass, string type):
             base (name,diameter,mass)
