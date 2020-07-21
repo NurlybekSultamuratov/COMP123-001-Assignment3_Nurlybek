@@ -8,6 +8,6 @@ namespace COMP123_001_Assignment3_Nurlybek
 {
     interface IHabitable
     {
-        void IHabitable();
+        bool Habitable();
     }
 }

@@ -5,24 +5,39 @@ using System.Text;
 
 namespace COMP123_001_Assignment3_Nurlybek
 {
-    public class TerrestrialPlanet
+    public class TerrestrialPlanet: Planet , IHasMoons, IHabitable
     {
         private bool _oxygen;
 
         public bool Habitable()
         {
-            throw new System.NotImplementedException();
+         if (_oxygen == true)
+            {
+                return true;
+            }
+         else
+            {
+                return false;
+            }
         }
 
         public bool HasMoons()
         {
-            throw new System.NotImplementedException();
+           if(MoonCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
 
-        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
+        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen):
+             base (name, diameter, mass)
         {
-
+            this._oxygen = oxygen;
         }
     }
 }

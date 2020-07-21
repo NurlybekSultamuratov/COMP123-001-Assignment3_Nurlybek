@@ -5,7 +5,7 @@ using System.Text;
 
 namespace COMP123_001_Assignment3_Nurlybek
 {
-    abstract class Planet
+    abstract public class Planet
     {
         private double _diameter;
         private double _mass;
@@ -68,12 +68,17 @@ namespace COMP123_001_Assignment3_Nurlybek
 
          public Planet (string name, double diameter, double mass)
         {
+
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
+
            
         }
 
         public override string ToString()
         {
-            return "";
+            return $"Name: {Name}, Diameter: {Diameter}, Mass: {Mass}";
         }
     }
 }

@@ -9,6 +9,6 @@ namespace COMP123_001_Assignment3_Nurlybek
     interface IHasRings
     {
 
-        void IHasRings();
+        bool HasRings();
     }
 }
