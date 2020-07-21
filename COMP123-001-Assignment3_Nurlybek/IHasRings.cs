@@ -6,17 +6,9 @@ using System.Threading.Tasks;
 
 namespace COMP123_001_Assignment3_Nurlybek
 {
-    class Program
+    interface IHasRings
     {
-        static void Main(string[] args)
-        {
 
-
-        }
-
-        private void waitForAnyKey()
-        {
-            Console.ReadLine();
-        }
+        void IHasRings();
     }
 }

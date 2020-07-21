@@ -65,5 +65,15 @@ namespace COMP123_001_Assignment3_Nurlybek
                 _rotationPeriod = value;
             }
         }
+
+         public Planet (string name, double diameter, double mass)
+        {
+           
+        }
+
+        public override string ToString()
+        {
+            return "";
+        }
     }
 }
