@@ -22,9 +22,9 @@ namespace COMP123_001_Assignment3_Nurlybek
             TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet("Jupiter",999,400,false);
             Console.WriteLine(terrestrialPlanet.ToString());
             waitForAnyKey();
-            
 
         }
+        //WAIT FOR KEY TO ENTER METHOD
         static void waitForAnyKey()
         {
             Console.ReadKey();

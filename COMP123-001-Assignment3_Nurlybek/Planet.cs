@@ -90,7 +90,6 @@ namespace COMP123_001_Assignment3_Nurlybek
             this._diameter = diameter;
             this._mass = mass;
 
-           
         }
 
         //OVERRIDE STRING METHOD
