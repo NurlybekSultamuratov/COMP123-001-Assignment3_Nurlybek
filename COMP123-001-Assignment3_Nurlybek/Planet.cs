@@ -5,8 +5,12 @@ using System.Text;
 
 namespace COMP123_001_Assignment3_Nurlybek
 {
+    //ABSTRACT CLASS PLANET
     abstract public class Planet
     {
+
+        //PRIVATE FIELDS
+
         private double _diameter;
         private double _mass;
         private int _moonCount;
@@ -14,6 +18,9 @@ namespace COMP123_001_Assignment3_Nurlybek
         private double _orbitalPeriod;
         private int _ringCount;
         private double _rotationPeriod;
+
+
+        //PUBLIC PROPERTIES
 
         public double Diameter
         {
@@ -66,6 +73,16 @@ namespace COMP123_001_Assignment3_Nurlybek
             }
         }
 
+
+        //CONSTRUCTOR
+
+        /// <summary>
+        /// This constructor passes parameters to the child classes
+        /// Assings its parameters to private fields
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="diameter"></param>
+        /// <param name="mass"></param>
          public Planet (string name, double diameter, double mass)
         {
 
@@ -76,6 +93,12 @@ namespace COMP123_001_Assignment3_Nurlybek
            
         }
 
+        //OVERRIDE STRING METHOD
+        /// <summary>
+        /// This ToString method is needed to override and display output to the console
+        /// It displays Name , Diameter and Mass of the Planet.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"Name: {Name}, Diameter: {Diameter}, Mass: {Mass}";
